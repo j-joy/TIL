@@ -32,7 +32,7 @@ dependencies{
 ## tips
 test set을 분류만 할 뿐, 'test' sourceset에서 'main' sourceset의 소스코드를 참조할 수 있는 것처럼 'test'의 소스 코드를 참조할 수 없다.  
 테스트 목적의 test data builder나, 유틸 클래스 같은 것이 있다면, 새로 추가한 testset에도 클래스를 만들어야 한다.  
-이 때, dependencies에 test의 runtimeClasspath을 추가하면 test의 클래스를 참조할 수 있다.  
+~~~이 때, dependencies에 test의 runtimeClasspath을 추가하면 test의 클래스를 참조할 수 있다.~~~ // test의 properties 파일까지 덮어버리므로 주의. 이걸 해결하는 방법을 알기 전까지는 tip은 아닌 걸로..  
 
 ```gradle
 dependencies{
