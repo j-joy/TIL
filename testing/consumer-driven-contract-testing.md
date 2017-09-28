@@ -12,5 +12,15 @@ MSA(Micro Service Architecture)의 테스팅 전략에 활용하면 좋은 테�
 
 주요 도구
 * Spring Cloud Contract : https://cloud.spring.io/spring-cloud-contract/
-* Pact : https://docs.pact.io/
+* Pact : https://docs.pact.io/  
 
+**non-jvm 언어**  
+consumer가 javascript 같은 non-jvm 언어일 경우, 
+[stub-runner-boot](https://github.com/spring-cloud-samples/stub-runner-boot)를 사용하여 stub을 다운로드 하고, 실행 되도록 한다.  
+stub-runner-boot를 fat jar로 빌드한 다음 아래와 같은 명령으로 실행한다.    
+
+```
+java -jar stub-runner-boot --stubrunner.ids="com.example.groupid:artifactid:classifier:version:8090" --stubrunner.repositoryRoot="http://localhost:8081/artifactory/libs-release-local"
+```
+
+참고: https://stackoverflow.com/a/43514323
