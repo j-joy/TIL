@@ -2,7 +2,8 @@
 
 Consumer-driven contracts testing tool
 
-Producer configuration
+### Producer 
+configuration
 ```gradle
 buildscript {
 	dependencies {
@@ -38,6 +39,43 @@ contracts {
 	baseClassForTests = 'jjoy.msatestingsample.coffeedelivery.contract.ContractVerifierBase' //자동 생성되는 Test파일의 부모클래스 설정
 }
 ```
+write contract
+
+*  {test folder}/resources/contracts/{class name}/shoud_ooo.groovy
+* last package name is class name, each groovy file is method.
+
+
+```groovy
+package contracts.Bread
+
+import org.springframework.cloud.contract.spec.Contract
+
+Contract.make {
+    description('''
+given
+when
+ /bread/{breadName} was called
+then
+ return bread object
+''')
+    request {
+        method 'GET'
+        url '/bread/bagel'
+    }
+    response {
+        status 200
+        body(
+                [
+                    name:'bagel'
+                ]
+        )
+        headers {
+            contentType(applicationJson())
+        }
+    }
+}
+```
+
 
 Consumer configuration
 ```gradle
