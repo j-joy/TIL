@@ -56,3 +56,12 @@ arr = []
 for i in range(0, rows):
     arr.append([0]*(cols))
 ```
+
+### copy array
+```python
+newArr = list(oldArr)
+
+newArr = oldArr[:]
+
+newArr = oldArr # same reference
+```
