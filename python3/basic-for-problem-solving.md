@@ -65,3 +65,27 @@ newArr = oldArr[:]
 
 newArr = oldArr # same reference
 ```
+
+### sort
+```python
+sorted([5, 2, 4, 1, 3])
+
+#reverse
+sorted([5, 2, 4, 1, 3], reverse=True)
+
+#sort by length
+sorted(["chemistry","physics","mathematics","art"], key=len)
+```
+
+
+### substring
+```python
+var1 = 'Hello World!'
+var2 = "Python Programming"
+
+print ("var1[0]: ", var1[0]) # var1[0]:  H
+print ("var2[1:5]: ", var2[1:5]) # var2[1:5]:  ytho => from index 1 to 5(before)
+
+var1[0]:  H
+var2[1:5]:  ytho
+```
