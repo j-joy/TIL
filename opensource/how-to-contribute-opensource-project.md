@@ -14,7 +14,7 @@
 1. 기여하고자 하는 오픈소스 프로젝트를 fork한다.
 1. 내 저장소의 fork한 프로젝트를 clone한다.
 1. 메인 저장소와 동기화(synchronize)하기 위해 upstream remote를 생성한다.  
-    git remote add upstream https://github.com/elasticsearch/elasticsearch-cloud-aws.git
+    git remote add upstream https://github.com/monsterz-lab/jangson-json-matcher
 1. 작업 브랜치를 생성한다.
 1. 버그 수정이나 기능 추가를 한다.
     1. 코드 스타일을 준수한다.
@@ -32,6 +32,8 @@
 https://gist.github.com/MarcDiethelm/7303312
 
 http://www.popit.kr/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4-git-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-pull-request-%EB%B3%B4%EB%82%B4%EA%B8%B0/
+
+https://medium.com/hbsmith/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4-%EC%9D%BC%EA%B8%B0-git-%EA%B7%B8%EB%A6%AC%EA%B3%A0-%EC%A0%80%EC%9E%A5%EC%86%8C-%EB%8B%A4%EB%A3%A8%EA%B8%B0-9f66c98c1cb5
 
 http://guruble.com/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%9D%98-%EC%BB%A8%ED%8A%B8%EB%A6%AC%EB%B7%B0%ED%84%B0%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%EB%90%98%EB%8A%94-%EA%B2%83/
 

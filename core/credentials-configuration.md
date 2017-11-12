@@ -28,3 +28,8 @@ AWS access keys best practices
   * 주기적으로 액세스 키를 교체한다.
   * 미사용 액세스 키를 제거한다.
   * 가장 중요한 작업에 대해 멀티 팩터 인증을 구성한다.
+
+use environment variable in gradle
+```gradle
+pass = System.getenv('MY_PASS')
+```
